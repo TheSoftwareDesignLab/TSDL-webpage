@@ -9,6 +9,6 @@ people:
   - facultyMario
 
 topic: Evolution and Maintenance of Android Apps
-external-link: http://ml-papers.gitlab.io/android.connectivity-2017/online-appendix/
+link: http://ml-papers.gitlab.io/android.connectivity-2017/online-appendix/
 layout: project
 ---

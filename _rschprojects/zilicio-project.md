@@ -10,6 +10,7 @@ people:
   - udgValeria
 
 topic: Evolution and Maintenance of Android Apps
+no-link: true
 layout: project
 image: /img/project-images/ZilicioLogo.png
 ---

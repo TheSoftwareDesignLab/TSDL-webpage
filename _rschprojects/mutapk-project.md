@@ -7,5 +7,6 @@ people:
 
 topic: Mutation Testing
 image: /img/project-images/MutAPK_logo.png
+no-link: true
 layout: project
 ---
