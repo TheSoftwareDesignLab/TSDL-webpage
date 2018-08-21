@@ -16,4 +16,5 @@ people:
 
 topic: Quality Attributes in Mobile Apps
 layout: project
+image: /img/project-images/vulnera.png
 ---
