@@ -8,4 +8,5 @@ people:
 topic: Automated Software Engineering
 
 layout: project
+image: /img/project-images/closed.png
 ---

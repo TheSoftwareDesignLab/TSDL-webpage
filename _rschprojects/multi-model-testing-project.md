@@ -10,4 +10,6 @@ people:
 
 topic: Software Testing
 layout: project
+image: /img/project-images/rip.png
+
 ---

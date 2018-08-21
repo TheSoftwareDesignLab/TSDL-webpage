@@ -12,4 +12,5 @@ people:
 topic: Quality Attributes in Mobile Apps
 layout: project
 external-link: http://ml-papers.gitlab.io/android.connectivity-2017/online-appendix/
+image: /img/project-images/event.png
 ---

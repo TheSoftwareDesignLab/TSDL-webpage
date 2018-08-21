@@ -13,4 +13,6 @@ people:
 
 topic: Software Testing
 layout: project
+image: /img/project-images/mutation.png
+
 ---
