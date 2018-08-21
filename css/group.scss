@@ -94,32 +94,29 @@ ul.news {
 
 @media (min-width: 576px) {
     .project-people { column-count: 2 }
-    .card-columns   { column-count: 3 }
+    .card-columns   { column-count: 2 }
     .role.faculty   { column-count: 2 }
     .role.grad      { column-count: 2 }
     .role.ugrad     { column-count: 2 }
     .role.collab    { column-count: 2 }
     .role.alum      { column-count: 2 }
     .project-image  { width: 2vw }
-    .project-card           { width: 60vw !important}
 }
 
 @media (min-width: 768px) {
     .project-people { column-count: 3 }
-    .card-columns   { column-count: 3 }
+    .card-columns   { column-count: 2 }
     .role.faculty   { column-count: 3 }
     .role.grad      { column-count: 3 }
     .role.ugrad     { column-count: 3 }
     .role.collab    { column-count: 3 }
     .role.alum      { column-count: 3 }
     .project-image  { width: 8vw }
-    .project-card           { width: 40vw !important}
 }
 
 @media (min-width: 1024px){
-    .project-card           { width: 30vw !important}
     .project-people { column-count: 3 }
-    .card-columns   { column-count: 3 }
+    .card-columns   { column-count: 2 }
     .role.faculty   { column-count: 5 }
     .role.grad      { column-count: 5 }
     .role.ugrad     { column-count: 5 }

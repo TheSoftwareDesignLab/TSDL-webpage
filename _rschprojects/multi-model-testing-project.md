@@ -8,7 +8,6 @@ people:
   - udgLaura
   - udgMaria
 
-topic: Android Testing
-no-link: true
+topic: Software Testing
 layout: project
 ---
