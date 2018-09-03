@@ -1,0 +1,28 @@
+[{
+    "author": "Rodríguez-Baquero, Diego and Linares-Vásquez, Mario",
+    "title": "Mutode: Generic JavaScript and Node.Js Mutation Testing Tool",
+    "booktitle": "Proceedings of the 27th ACM SIGSOFT International Symposium on Software Testing and Analysis",
+    "series": "ISSTA 2018",
+    "year": "2018",
+    "isbn": "978-1-4503-5699-2",
+    "location": "Amsterdam, Netherlands",
+    "pages": "372--375",
+    "numpages": 4,
+    "url": "http://doi.acm.org/10.1145/3213846.3229504",
+    "doi": "10.1145/3213846.3229504",
+    "acmid": "3229504",
+    "publisher": "ACM",
+    "address": "New York, NY, USA",
+    "keywords": "JavaScript, Mutation testing, Node.js, Operators"
+},{ 
+    "author":"S. Scalabrino, M. Linares-Vásquez, D. Poshyvanyk and R. Oliveto", 
+    "booktitle":"2016 IEEE 24th International Conference on Program Comprehension (ICPC)", 
+    "title":"Improving code readability models with textual features", 
+    "year":"2016", 
+    "pages":"1-10", 
+    "keywords":"software maintenance;source code (software);text analysis;code readability models;textual features;software maintenance;source code;program comprehension effort;software readability;line length;code snippets;Feature extraction;Syntactics;Visualization;Computational modeling;Semantics;Software quality", 
+    "doi":"10.1109/ICPC.2016.7503707", 
+    "ISSN":{}, 
+    "month":"May",
+    "location": "Austin, TX"
+}]

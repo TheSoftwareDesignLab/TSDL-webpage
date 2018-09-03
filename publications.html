@@ -20,7 +20,8 @@ notitle: true
                 </div>           
 </div>
 
-
+<div id="articles">
+        <!--
 <div class="card card-header bg-faded">
         Liñan, S., Bello-Jiménez, L., Arévalo, M. and Linares-Vásquez, M. "Automated extraction of augmented models for Android apps" in Proceedings of 34th IEEE International Conference of Software Maintenance and Evolution (ICSME'18). New Ideas and Emerging Results Paper, Madrid, Spain. September 23 - 29, 2018, to appear 4 pages.
 </div>
@@ -87,3 +88,106 @@ notitle: true
 <div class="card card-header bg-faded">
     Scalabrino, S., Linares-Vásquez, M., Poshyvanyk, D., and Oliveto, R., “Improving Code Readability Models with Textual Features”, in Proceedings of the 24th IEEE International Conference on Program Comprehension (ICPC’16), Austin, TX, May 16-17, 2016 (30% acceptance ratio)
 </div>
+-->
+</div>
+<script>
+var nData;
+$(document).on('keyup paste', 'input[id^=search]', function() {
+        refreshData(nData);
+});
+$(document).on('keyup paste', 'input[id^=year]', function() {
+        refreshData(nData);
+});
+$.get(
+    "bib/jsonBib.json",
+    function(data) {
+            nData = data;
+            refreshData(data);
+    }
+);
+
+function refreshData (data) {
+        document.getElementById('articles').innerHTML="";
+        data.forEach(article => {
+
+                searchText = document.getElementById('search').value;
+                yearText = document.getElementById('year').value;
+                textFilter = false;
+                yearFilter = false;
+
+                if(searchText && searchText != '' && searchText != ' ')
+                {
+                        textFilter = true;
+                }
+                if(yearText && yearText != '' && yearText != ' ')
+                {
+                        yearFilter = true;
+                }
+                
+                if((textFilter == false && yearFilter == false) ||
+                (yearFilter && yearText == article['year'])||
+                (textFilter && 
+                (article['title'].includes(searchText) 
+                || article['year'].includes(searchText) 
+                || article['author'].includes(searchText) 
+                || article['booktitle'].includes(searchText)
+                || article['series'].includes(searchText)
+                || article['location'].includes(searchText)
+                ))) {
+                var nDiv = document.createElement('div');
+                nDiv.classList.add('card', 'card-header', 'bg-faded', 'customBib');
+                nDiv.innerText = createArticleText(article);
+                if(article['url'])
+                {
+
+                if(article['doi']) {
+                        var doi = document.createElement('a');
+                        doi.classList.add('customBadge');
+                        doi.innerHTML = "doi: "+article['doi'];
+                        doi.href=article['url'];
+
+                        nDiv.appendChild(doi);
+                }
+                else {
+                var link = document.createElement('a');
+                link.innerHTML = "URL";
+                link.href=article.url;
+                nDiv.appendChild(link);
+                }
+                }
+
+                if(article['doi'] && !article['url'])
+                {
+                        var doi = document.createElement('a');
+                        doi.classList.add('customBadge');
+                        doi.innerHTML = "doi: "+article['doi'];
+                        nDiv.appendChild(doi);
+                }
+                
+                
+
+                document.getElementById('articles').appendChild(nDiv);
+                }
+            });
+}
+
+function createArticleText(article) {
+        var text = '';
+        text = text + article['author'] 
+                + ". \"" 
+                + article['title'] 
+                + "\", " 
+                + article['booktitle']
+                
+                if(article['series'])
+                {
+                text = text+ " ("+article['series']+"), ";
+                }
+                text = text+" "+article['location']
+                +". " 
+                + article['year']
+                +".";
+
+return text;
+}
+</script>
