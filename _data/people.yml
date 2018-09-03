@@ -65,6 +65,12 @@ mastAnamaria:
     role: grad
     image: /img/people/img_avatar2.png
     bio: "MSc. Student - Information Engineering"
+mastDiana:
+    display_name: "Diana Solano"
+    role: grad
+    image: /img/people/diana.jpg
+    bio: "MSc. Student - Industrial Engineering"
+
 
 udgLaura:
     display_name: "Laura Bello"
@@ -79,7 +85,7 @@ udgMaria:
 udgValeria:
     display_name: "Valeria Vanegas"
     role: ugrad
-    image: /img/people/img_avatar2.png
+    image: /img/people/valeria.jpg
 
 udgSantiago:
     display_name: "Santiago Saenz"
