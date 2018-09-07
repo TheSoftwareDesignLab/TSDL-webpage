@@ -11,13 +11,7 @@ notitle: true
                                 <label for="inputAddress">Filter articles</label>
                                 <input type="text" class="form-control" id="search" placeholder="Search">
                 </div>    
-        </div>   
-        <div class="col-4">
-                        <div class="form-group">
-                                        <label for="inputAddress">Filter by year</label>
-                                        <input type="number" class="form-control" id="year" placeholder="Search">
-                        </div>    
-                </div>           
+        </div>         
 </div>
 
 <div id="articles">
@@ -27,9 +21,7 @@ var nData;
 $(document).on('keyup paste', 'input[id^=search]', function() {
         refreshData(nData);
 });
-$(document).on('keyup paste', 'input[id^=year]', function() {
-        refreshData(nData);
-});
+
 $.get(
     "bib/jsonBib.json",
     function(data) {
@@ -43,26 +35,20 @@ function refreshData (data) {
         data.forEach(article => {
 
                 searchText = document.getElementById('search').value;
-                yearText = document.getElementById('year').value;
                 textFilter = false;
-                yearFilter = false;
 
                 if(searchText && searchText != '' && searchText != ' ')
                 {
                         textFilter = true;
+                        searchText = searchText.toLowerCase();
                 }
-                if(yearText && yearText != '' && yearText != ' ')
-                {
-                        yearFilter = true;
-                }
-                
-                if((textFilter == false && yearFilter == false) ||
-                (yearFilter && yearText == article['year'])||
+                createAuthorsText (article);
+                if((textFilter == false) ||
                 (textFilter && 
-                ((article['title'] && article['title'].includes(searchText))
-                || (article['author'] && article['author'].includes(searchText))
-                || (article['container-title'] && article['container-title'].includes(searchText))
-                || (article['issued'] && article['issued']['date-parts'] && article['issued']['date-parts'].includes(searchText))
+                ((article['title'] && article['title'].toLowerCase().includes(searchText))
+                || (article['author'] && article['authorText'].toLowerCase().includes(searchText))
+                || (article['container-title'] && article['container-title'].toLowerCase().includes(searchText))
+                || (article['issued'] && article['issued']['date-parts'] && JSON.stringify(article['issued']['date-parts']).toLowerCase().includes(searchText))
                 ))) {
                 var nDiv = document.createElement('div');
                 nDiv.classList.add('card', 'card-header', 'bg-faded', 'customBib');
@@ -101,6 +87,21 @@ function refreshData (data) {
             });
 }
 
+function createAuthorsText(article) {
+        article['authorText'] = '';
+        if(article ['author']) {
+                var authors = article['author'];
+                authors.forEach((pAuth, index) => {
+                        article['authorText'] = article['authorText'] + pAuth['given'] + ' ' + pAuth['family'];
+                        if(index < authors.length-2) {
+                                article['authorText'] = article['authorText'] + ', ';
+                        }
+                        else if(index < authors.length-1) {
+                                article['authorText'] = article['authorText'] + ' and ';
+                        }
+        })}
+}
+
 function createArticleText(article) {
         var text = '';
         if(article['title']) {
@@ -108,18 +109,7 @@ function createArticleText(article) {
         }
 
         if(article ['author']) {
-                var authorText = '';
-                var authors = article['author'];
-                authors.forEach((pAuth, index) => {
-                        authorText = authorText + pAuth['given'] + ' ' + pAuth['family'];
-                        if(index < authors.length-2) {
-                                authorText = authorText + ', ';
-                        }
-                        else if(index < authors.length-1) {
-                                authorText = authorText + ' and ';
-                        }
-        })
-        text = text + authorText + ", ";
+        text = text + article['authorText'] + ", ";
         }
 
         
