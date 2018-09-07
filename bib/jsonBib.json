@@ -32,6 +32,182 @@
     "type": "paper-conference"
   },
   {
+    "DOI": "10.1145/3180155.3180221",
+    "ISBN": "978-1-4503-5638-1",
+    "URL": "http://doi.acm.org/10.1145/3180155.3180221",
+    "author": [
+      {
+        "family": "Vendome",
+        "given": "Christopher"
+      },
+      {
+        "family": "German",
+        "given": "Daniel M."
+      },
+      {
+        "family": "Di Penta",
+        "given": "Massimiliano"
+      },
+      {
+        "family": "Bavota",
+        "given": "Gabriele"
+      },
+      {
+        "family": "Linares-Vásquez",
+        "given": "Mario"
+      },
+      {
+        "family": "Poshyvanyk",
+        "given": "Denys"
+      }
+    ],
+    "collection-title": "ICSE ’18",
+    "container-title": "Proceedings of the 40th international conference on software engineering",
+    "id": "Vendome:2018:DDW:3180155.3180221",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "keyword": "empirical studies, open source practices, software licenses",
+    "page": "268-279",
+    "publisher": "ACM",
+    "publisher-place": "New York, NY, USA",
+    "title": "To distribute or not to distribute?: Why licensing bugs matter",
+    "title-short": "To distribute or not to distribute?",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1145/3183440.3183492",
+    "ISBN": "978-1-4503-5663-3",
+    "URL": "http://doi.acm.org/10.1145/3183440.3183492",
+    "author": [
+      {
+        "family": "Moran",
+        "given": "Kevin"
+      },
+      {
+        "family": "Tufano",
+        "given": "Michele"
+      },
+      {
+        "family": "Bernal-Cárdenas",
+        "given": "Carlos"
+      },
+      {
+        "family": "Linares-Vásquez",
+        "given": "Mario"
+      },
+      {
+        "family": "Bavota",
+        "given": "Gabriele"
+      },
+      {
+        "family": "Vendome",
+        "given": "Christopher"
+      },
+      {
+        "family": "Di Penta",
+        "given": "Massimiliano"
+      },
+      {
+        "family": "Poshyvanyk",
+        "given": "Denys"
+      }
+    ],
+    "collection-title": "ICSE ’18",
+    "container-title": "Proceedings of the 40th international conference on software engineering: Companion proceeedings",
+    "id": "Moran:2018:MMT:3183440.3183492",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "keyword": "android, mutation testing, operators",
+    "page": "33-36",
+    "publisher": "ACM",
+    "publisher-place": "New York, NY, USA",
+    "title": "MDroid+: A mutation testing framework for android",
+    "title-short": "MDroid+",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1109/SANER.2018.8330236",
+    "author": [
+      {
+        "family": "Linares-Vásquez",
+        "given": "M."
+      },
+      {
+        "family": "Vendome",
+        "given": "C."
+      },
+      {
+        "family": "Tufano",
+        "given": "M."
+      },
+      {
+        "family": "Poshyvanyk",
+        "given": "D."
+      }
+    ],
+    "container-title": "2018 ieee 25th international conference on software analysis, evolution and reengineering (saner)",
+    "id": "8330236",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "470-470",
+    "title": "How developers micro-optimize android apps (journal-first abstract)",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1002/smr.1958",
+    "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smr.1958",
+    "abstract": "Abstract Unreadable code could compromise program comprehension, and it could cause the introduction of bugs. Code consists of mostly natural language text, both in identifiers and comments, and it is a particular form of text. Nevertheless, the models proposed to estimate code readability take into account only structural aspects and visual nuances of source code, such as line length and alignment of characters. In this paper, we extend our previous work in which we use textual features to improve code readability models. We introduce 2 new textual features, and we reassess the readability prediction power of readability models on more than 600 code snippets manually evaluated, in terms of readability, by 5K+ people. We also replicate a study by Buse and Weimer on the correlation between readability and FindBugs warnings, evaluating different models on 20 software systems, for a total of 3M lines of code. The results demonstrate that (1) textual features complement other features and (2) a model containing all the features achieves a significantly higher accuracy as compared with all the other state-of-the-art models. Also, readability estimation resulting from a more accurate model, ie, the combined model, is able to predict more accurately FindBugs warnings.",
+    "author": [
+      {
+        "family": "Scalabrino",
+        "given": "Simone"
+      },
+      {
+        "family": "Linares-Vásquez",
+        "given": "Mario"
+      },
+      {
+        "family": "Oliveto",
+        "given": "Rocco"
+      },
+      {
+        "family": "Poshyvanyk",
+        "given": "Denys"
+      }
+    ],
+    "container-title": "Journal of Software: Evolution and Process",
+    "id": "doi:10.1002/smr.1958",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "keyword": "code readability, quality warning prediction, textual analysis",
+    "note": "e1958 smr.1958",
+    "page": "e1958",
+    "title": "A comprehensive model for code readability",
+    "type": "article-journal",
+    "volume": "30"
+  },
+  {
     "DOI": "10.1145/3196321.3196339",
     "ISBN": "978-1-4503-5714-2",
     "URL": "http://doi.acm.org/10.1145/3196321.3196339",
@@ -147,45 +323,6 @@
     "type": "paper-conference"
   },
   {
-    "DOI": "10.1145/2931037.2931072",
-    "ISBN": "978-1-4503-4390-9",
-    "URL": "http://doi.acm.org/10.1145/2931037.2931072",
-    "author": [
-      {
-        "family": "Linares-Vásquez",
-        "given": "Mario"
-      },
-      {
-        "family": "Li",
-        "given": "Boyang"
-      },
-      {
-        "family": "Vendome",
-        "given": "Christopher"
-      },
-      {
-        "family": "Poshyvanyk",
-        "given": "Denys"
-      }
-    ],
-    "collection-title": "ISSTA 2016",
-    "container-title": "Proceedings of the 25th international symposium on software testing and analysis",
-    "id": "Linares-Vasquez:2016:DDU:2931037.2931072",
-    "issued": {
-      "date-parts": [
-        [
-          2016
-        ]
-      ]
-    },
-    "keyword": "Database-centric applications, Documentation, SQL-data statements, Schema constraints",
-    "page": "270-281",
-    "publisher": "ACM",
-    "publisher-place": "New York, NY, USA",
-    "title": "Documenting database usages and schema constraints in database-centric applications",
-    "type": "paper-conference"
-  },
-  {
     "DOI": "10.1109/MSR.2017.60",
     "ISBN": "978-1-5386-1544-7",
     "URL": "https://doi.org/10.1109/MSR.2017.60",
@@ -217,45 +354,6 @@
     "publisher": "IEEE Press",
     "publisher-place": "Piscataway, NJ, USA",
     "title": "An empirical study on android-related vulnerabilities",
-    "type": "paper-conference"
-  },
-  {
-    "DOI": "10.1145/2889160.2889177",
-    "ISBN": "978-1-4503-4205-6",
-    "URL": "http://doi.acm.org/10.1145/2889160.2889177",
-    "author": [
-      {
-        "family": "Moran",
-        "given": "Kevin"
-      },
-      {
-        "family": "Linares-Vásquez",
-        "given": "Mario"
-      },
-      {
-        "family": "Bernal-Cárdenas",
-        "given": "Carlos"
-      },
-      {
-        "family": "Poshyvanyk",
-        "given": "Denys"
-      }
-    ],
-    "collection-title": "ICSE ’16",
-    "container-title": "Proceedings of the 38th international conference on software engineering companion",
-    "id": "Moran:2016:FTF:2889160.2889177",
-    "issued": {
-      "date-parts": [
-        [
-          2016
-        ]
-      ]
-    },
-    "page": "609-612",
-    "publisher": "ACM",
-    "publisher-place": "New York, NY, USA",
-    "title": "FUSION: A tool for facilitating and augmenting android bug reporting",
-    "title-short": "FUSION",
     "type": "paper-conference"
   },
   {
@@ -452,143 +550,6 @@
     "type": "paper-conference"
   },
   {
-    "DOI": "10.1145/3183440.3183492",
-    "ISBN": "978-1-4503-5663-3",
-    "URL": "http://doi.acm.org/10.1145/3183440.3183492",
-    "author": [
-      {
-        "family": "Moran",
-        "given": "Kevin"
-      },
-      {
-        "family": "Tufano",
-        "given": "Michele"
-      },
-      {
-        "family": "Bernal-Cárdenas",
-        "given": "Carlos"
-      },
-      {
-        "family": "Linares-Vásquez",
-        "given": "Mario"
-      },
-      {
-        "family": "Bavota",
-        "given": "Gabriele"
-      },
-      {
-        "family": "Vendome",
-        "given": "Christopher"
-      },
-      {
-        "family": "Di Penta",
-        "given": "Massimiliano"
-      },
-      {
-        "family": "Poshyvanyk",
-        "given": "Denys"
-      }
-    ],
-    "collection-title": "ICSE ’18",
-    "container-title": "Proceedings of the 40th international conference on software engineering: Companion proceeedings",
-    "id": "Moran:2018:MMT:3183440.3183492",
-    "issued": {
-      "date-parts": [
-        [
-          2018
-        ]
-      ]
-    },
-    "keyword": "android, mutation testing, operators",
-    "page": "33-36",
-    "publisher": "ACM",
-    "publisher-place": "New York, NY, USA",
-    "title": "MDroid+: A mutation testing framework for android",
-    "title-short": "MDroid+",
-    "type": "paper-conference"
-  },
-  {
-    "DOI": "10.1145/3180155.3180221",
-    "ISBN": "978-1-4503-5638-1",
-    "URL": "http://doi.acm.org/10.1145/3180155.3180221",
-    "author": [
-      {
-        "family": "Vendome",
-        "given": "Christopher"
-      },
-      {
-        "family": "German",
-        "given": "Daniel M."
-      },
-      {
-        "family": "Di Penta",
-        "given": "Massimiliano"
-      },
-      {
-        "family": "Bavota",
-        "given": "Gabriele"
-      },
-      {
-        "family": "Linares-Vásquez",
-        "given": "Mario"
-      },
-      {
-        "family": "Poshyvanyk",
-        "given": "Denys"
-      }
-    ],
-    "collection-title": "ICSE ’18",
-    "container-title": "Proceedings of the 40th international conference on software engineering",
-    "id": "Vendome:2018:DDW:3180155.3180221",
-    "issued": {
-      "date-parts": [
-        [
-          2018
-        ]
-      ]
-    },
-    "keyword": "empirical studies, open source practices, software licenses",
-    "page": "268-279",
-    "publisher": "ACM",
-    "publisher-place": "New York, NY, USA",
-    "title": "To distribute or not to distribute?: Why licensing bugs matter",
-    "title-short": "To distribute or not to distribute?",
-    "type": "paper-conference"
-  },
-  {
-    "DOI": "10.1109/SANER.2018.8330236",
-    "author": [
-      {
-        "family": "Linares-Vásquez",
-        "given": "M."
-      },
-      {
-        "family": "Vendome",
-        "given": "C."
-      },
-      {
-        "family": "Tufano",
-        "given": "M."
-      },
-      {
-        "family": "Poshyvanyk",
-        "given": "D."
-      }
-    ],
-    "container-title": "2018 ieee 25th international conference on software analysis, evolution and reengineering (saner)",
-    "id": "8330236",
-    "issued": {
-      "date-parts": [
-        [
-          2018
-        ]
-      ]
-    },
-    "page": "470-470",
-    "title": "How developers micro-optimize android apps (journal-first abstract)",
-    "type": "paper-conference"
-  },
-  {
     "DOI": "10.1109/ASE.2017.8115654",
     "author": [
       {
@@ -670,6 +631,84 @@
     "page": "15-18",
     "title": "CrashScope: A practical tool for automated testing of android applications",
     "title-short": "CrashScope",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1145/2931037.2931072",
+    "ISBN": "978-1-4503-4390-9",
+    "URL": "http://doi.acm.org/10.1145/2931037.2931072",
+    "author": [
+      {
+        "family": "Linares-Vásquez",
+        "given": "Mario"
+      },
+      {
+        "family": "Li",
+        "given": "Boyang"
+      },
+      {
+        "family": "Vendome",
+        "given": "Christopher"
+      },
+      {
+        "family": "Poshyvanyk",
+        "given": "Denys"
+      }
+    ],
+    "collection-title": "ISSTA 2016",
+    "container-title": "Proceedings of the 25th international symposium on software testing and analysis",
+    "id": "Linares-Vasquez:2016:DDU:2931037.2931072",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "keyword": "Database-centric applications, Documentation, SQL-data statements, Schema constraints",
+    "page": "270-281",
+    "publisher": "ACM",
+    "publisher-place": "New York, NY, USA",
+    "title": "Documenting database usages and schema constraints in database-centric applications",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1145/2889160.2889177",
+    "ISBN": "978-1-4503-4205-6",
+    "URL": "http://doi.acm.org/10.1145/2889160.2889177",
+    "author": [
+      {
+        "family": "Moran",
+        "given": "Kevin"
+      },
+      {
+        "family": "Linares-Vásquez",
+        "given": "Mario"
+      },
+      {
+        "family": "Bernal-Cárdenas",
+        "given": "Carlos"
+      },
+      {
+        "family": "Poshyvanyk",
+        "given": "Denys"
+      }
+    ],
+    "collection-title": "ICSE ’16",
+    "container-title": "Proceedings of the 38th international conference on software engineering companion",
+    "id": "Moran:2016:FTF:2889160.2889177",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "609-612",
+    "publisher": "ACM",
+    "publisher-place": "New York, NY, USA",
+    "title": "FUSION: A tool for facilitating and augmenting android bug reporting",
+    "title-short": "FUSION",
     "type": "paper-conference"
   }
 ]
