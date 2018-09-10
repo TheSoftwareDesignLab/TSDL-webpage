@@ -65,19 +65,27 @@ jumbotron: true
             <h1>News</h1>
         </div>
     </div>
-    <div style="background-color: #33a5db; height: 2px; margin-top: 10px"></div>
-    <ul class="news list-unstyled">
-        {% for post in site.posts limit: site.front_page_news %}
-            {% include news-item.html item=post %}
-        {% endfor %}
-    </ul>
-    {% assign numposts = site.posts | size %}
-    {% if numposts >= 1 %}
-        <p>
-            <span class="fa fa-fw fa-history"></span>
-            <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
-        </p>
-    {% endif %}
+    <div class="row">
+        <div class="col-lg-8">
+            <div style="background-color: #33a5db; height: 2px; margin-top: 10px"></div>
+            <ul class="news list-unstyled">
+                {% for post in site.posts limit: site.front_page_news %}
+                    {% include news-item.html item=post %}
+                {% endfor %}
+            </ul>
+            {% assign numposts = site.posts | size %}
+            {% if numposts >= 1 %}
+                <p>
+                    <span class="fa fa-fw fa-history"></span>
+                    <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
+                </p>
+            {% endif %}
+        </div>
+        <div class="col-lg-4" style="border: 2px solid #33a5db">
+            <a class="twitter-timeline" href="https://twitter.com/TheSwDLab?ref_src=twsrc%5Etfw">Tweets by TheSwDLab</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </div>
+    </div>
+    
 </section>
 <!-- 
 <section>

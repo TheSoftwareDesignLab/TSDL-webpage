@@ -5,8 +5,8 @@ description: |
 
 
 people:
-  - mastSergio
   - mastSantiago
+  - mastSergio
   - mastCamilo
 link: https://ingenieria.uniandes.edu.co/Paginas/Noticias.aspx?nid=289
 layout: project
