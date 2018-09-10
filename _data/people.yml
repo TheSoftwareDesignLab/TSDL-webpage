@@ -42,34 +42,31 @@ mastSergio:
 #     image: /img/people/fotoJairoBautista.jpg
 #     bio: "MSc. Student - Software Engineering"    
 
-mastSamuel:
-    display_name: "Samuel Salazar"
-    role: grad
-    image: /img/people/fotoSamuelSalazar.jpg
-    bio: "MSc. Student - Software Engineering"
-
-mastDiego:
-    display_name: "Diego Rodríguez-Baquero"
-    role: grad
-    image: /img/people/fotoDiegoRodriguez.jpg
-    bio: "MSc. Student - Software Engineering"
-
-mastCamiloOrtiz:
-    display_name: "Camilo Ortiz-Casas"
-    role: grad
-    image: /img/people/avatar2.png
-    bio: "MSc. Student - Information Security"
-
 mastAnamaria:
     display_name: "Anamaria Mojica"
     role: grad
     image: /img/people/fotoAna.jpg
     bio: "MSc. Student - Information Engineering"
+mastCamiloOrtiz:
+    display_name: "Camilo Ortiz-Casas"
+    role: grad
+    image: /img/people/avatar2.png
+    bio: "MSc. Student - Information Security"
 mastDiana:
     display_name: "Diana Solano"
     role: grad
     image: /img/people/diana.jpg
     bio: "MSc. Student - Industrial Engineering"
+mastDiego:
+    display_name: "Diego Rodríguez-Baquero"
+    role: grad
+    image: /img/people/fotoDiegoRodriguez.jpg
+    bio: "MSc. Student - Software Engineering"
+mastSamuel:
+    display_name: "Samuel Salazar"
+    role: grad
+    image: /img/people/fotoSamuelSalazar.jpg
+    bio: "MSc. Student - Software Engineering"
 
 
 udgLaura:
