@@ -1,5 +1,54 @@
 [
   {
+    "DOI": "10.1145/3241742",
+    "ISSN": "1049-331X",
+    "URL": "http://doi.acm.org/10.1145/3241742",
+    "author": [
+      {
+        "family": "Linares-Vásquez",
+        "given": "Mario"
+      },
+      {
+        "family": "Bavota",
+        "given": "Gabriele"
+      },
+      {
+        "family": "Bernal-Cárdenas",
+        "given": "Carlos"
+      },
+      {
+        "family": "Penta",
+        "given": "Massimiliano Di"
+      },
+      {
+        "family": "Oliveto",
+        "given": "Rocco"
+      },
+      {
+        "family": "Poshyvanyk",
+        "given": "Denys"
+      }
+    ],
+    "container-title": "ACM Trans. Softw. Eng. Methodol.",
+    "id": "Linares-Vasquez:2018:MOE:3276753.3241742",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          9
+        ]
+      ]
+    },
+    "keyword": "Energy consumption, empirical study, mobile applications",
+    "page": "14:1-14:47",
+    "publisher": "ACM",
+    "publisher-place": "New York, NY, USA",
+    "title": "Multi-objective optimization of energy consumption of guis in android apps",
+    "type": "article-journal",
+    "volume": "27"
+  },
+  {
     "DOI": "10.1145/3213846.3229504",
     "ISBN": "978-1-4503-5699-2",
     "URL": "http://doi.acm.org/10.1145/3213846.3229504",
