@@ -4,6 +4,11 @@ description: "The amount of android applications is having a tremendous increasi
 
 people:
   - mastCamilo
+  - facultyMario
+  - collGabrieleBavota
+  - collChristopher
+  - collMassimiliano
+  - collDenysPosh
 
 topic: Automated Software Engineering
 
