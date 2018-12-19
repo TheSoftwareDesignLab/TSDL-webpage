@@ -6,11 +6,6 @@ facultyMario:
     bio: "Assistant Professor"
     webpage: "https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/"
 
-docOlga:
-    display_name: "Olga Vega"
-    role: grad
-    image: /img/people/fotoOlgaVega.jpg
-    bio: "Ph.D. Student"
 docAlejandro:
     display_name: "Alejandro Mazuera"
     role: grad
@@ -146,6 +141,12 @@ collChristopher:
     image: "/img/people/fotoChristopherV.jpg"
     webpage: "http://www.christophervendome.com"
     bio: "Assistant Professor at Miami University, Ohio, USA"
+
+alumOlga:
+    display_name: "Olga Vega"
+    role: alum
+    image: /img/people/fotoOlgaVega.jpg
+    #bio: "Ph.D. Student"
 
 alumSofia:
     display_name: "Sofia Hernández"
