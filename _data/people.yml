@@ -77,6 +77,18 @@ camiloSanchez:
     role: ugrad
     image: /img/people/fotoCamiloSanchez.jpg
 
+santiagoLinan:
+    display_name: "Santiago Liñán"
+    role: collab
+    image: /img/people/fotoSantiagoLinan.jpg
+    # bio: "MSc. Student - Software Engineering"
+    webpage: "https://slinan.github.io/"
+
+dianaSolano:
+    display_name: "Diana Solano"
+    role: collab
+    image: /img/people/diana.jpg
+    # bio: "MSc. Student - Industrial Engineering"
 
 collSandraRueda:
     display_name: "Sandra Rueda"
@@ -127,18 +139,6 @@ collChristopher:
     webpage: "http://www.christophervendome.com"
     bio: "Assistant Professor at Miami University, Ohio, USA"
 
-santiagoLinan:
-    display_name: "Santiago Liñán"
-    role: collab
-    image: /img/people/fotoSantiagoLinan.jpg
-    # bio: "MSc. Student - Software Engineering"
-    webpage: "https://slinan.github.io/"
-
-dianaSolano:
-    display_name: "Diana Solano"
-    role: collab
-    image: /img/people/diana.jpg
-    # bio: "MSc. Student - Industrial Engineering"
 
 
 
