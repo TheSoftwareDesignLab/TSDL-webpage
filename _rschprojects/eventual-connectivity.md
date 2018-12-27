@@ -5,9 +5,9 @@ description: Study on "Eventual Connectivity" Issues exhibited by Android apps i
 
 
 people:
-  - mastCamilo
-  - udgMichael
-  - facultyMario
+  - camiloEscobar
+  - michaelOsorio
+  - marioLinares
 
 topic: Quality Attributes in Mobile Apps
 layout: project

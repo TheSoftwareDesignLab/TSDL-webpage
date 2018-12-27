@@ -4,9 +4,9 @@ description: Mutation Testing is a type of software testing where we mutate (cha
 
 
 people:
-  - facultyMario
-  - mastCamilo
-  - mastDiego
+  - marioLinares
+  - camiloEscobar
+  - diegoRodriguez
   - collGabrieleBavota
   - collMassimiliano
   - collDenysPosh

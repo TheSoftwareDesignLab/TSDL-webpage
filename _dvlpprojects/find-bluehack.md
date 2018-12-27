@@ -4,12 +4,12 @@ description: Technological platform under development. This solution is being fi
 
 
 people:
-  - mastDiana
-  - udgLaura
-  - mastCamilo
-  - mastSantiago
-  - mastSergio
-  - facultyMario
+  - dianaSolano
+  - lauraBello
+  - camiloEscobar
+  - santiagoLinan
+  - sergioYodeb
+  - marioLinares
 link: https://thesoftwaredesignlab.github.io/blog/2018/09/01/bluehack.html
 layout: project
 image: /img/project-images/findBlueHack.jpg

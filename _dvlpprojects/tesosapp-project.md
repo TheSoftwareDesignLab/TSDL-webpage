@@ -5,9 +5,9 @@ description: |
 
 
 people:
-  - mastSantiago
-  - mastSergio
-  - mastCamilo
+  - santiagoLinan
+  - sergioYodeb
+  - camiloEscobar
 link: https://ingenieria.uniandes.edu.co/Paginas/Noticias.aspx?nid=289
 layout: project
 image: /img/project-images/clubDeLosTesos.jpg

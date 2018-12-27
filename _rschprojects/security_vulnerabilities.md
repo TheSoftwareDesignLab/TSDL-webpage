@@ -4,15 +4,15 @@ description: Study on "Security Vulnerabilities" found in mobile applications. T
 
 
 people:
-  - facultyMario
+  - marioLinares
   - collGabrieleBavota
   - collSandraRueda
-  - docAlejandro
+  - alejandroMazuera
   - mastJairo
-  - mastCamilo
-  - mastCamiloOrtiz
-  - udgCamilo
-  - udgSantiago
+  - camiloEscobar
+  - camiloOrtiz
+  - camiloSanchez
+  - santiagoSaenz
 
 topic: Quality Attributes in Mobile Apps
 layout: project

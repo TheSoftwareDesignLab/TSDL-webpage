@@ -1,97 +1,82 @@
 
-facultyMario:
+marioLinares:
     display_name: "Mario Linares-Vásquez"
     role: faculty
     image: /img/people/fotoMarioLinaresV.jpg
     bio: "Assistant Professor"
     webpage: "https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/"
 
-docAlejandro:
+alejandroMazuera:
     display_name: "Alejandro Mazuera"
     role: grad
     image: /img/people/fotoAlejandroMazuera.jpg
     bio: "Ph.D. Student" 
-mastCamilo:
+camiloEscobar:
     display_name: "Camilo Escobar-Velásquez"
     role: grad
     image: /img/people/fotoCamiloEscobarV.jpg
-    bio: "MSc. Student - Software Engineering"
+    bio: "Ph.D. Student"
 
-mastSantiago:
-    display_name: "Santiago Liñán"
-    role: grad
-    image: /img/people/fotoSantiagoLinan.jpg
-    bio: "MSc. Student - Software Engineering"
-
-mastSergio:
+sergioYodeb:
     display_name: "Sergio Velásquez"
     role: grad
     image: /img/people/fotoSergioVelasquez.jpg
-    bio: "MSc. Student - Software Engineering"
+    bio: "MSc. Student - Software Engineering"  
 
-
-
-# mastJairo:
-#     display_name: "Jairo Bautista"
-#     role: grad
-#     image: /img/people/fotoJairoBautista.jpg
-#     bio: "MSc. Student - Software Engineering"    
-
-mastAnamaria:
+anamariaMojica:
     display_name: "Anamaria Mojica"
     role: grad
     image: /img/people/fotoAna.jpg
     bio: "MSc. Student - Information Engineering"
-mastCamiloOrtiz:
-    display_name: "Camilo Ortiz-Casas"
-    role: grad
-    image: /img/people/avatar2.png
-    bio: "MSc. Student - Information Security"
-mastDiana:
-    display_name: "Diana Solano"
-    role: grad
-    image: /img/people/diana.jpg
-    bio: "MSc. Student - Industrial Engineering"
-mastDiego:
+diegoRodriguez:
     display_name: "Diego Rodríguez-Baquero"
     role: grad
     image: /img/people/fotoDiegoRodriguez.jpg
     bio: "MSc. Student - Software Engineering"
-mastSamuel:
+camiloOrtiz:
+    display_name: "Camilo Ortiz-Casas"
+    role: grad
+    image: /img/people/avatar2.png
+    bio: "MSc. Student - Information Security"
+
+mariaArevalo:
+    display_name: "Maria Arevalo"
+    role: grad
+    image: /img/people/fotoMariaArevalo.jpg
+    bio: "MSc. Student - Software Engineering"
+
+samuelSalazar:
     display_name: "Samuel Salazar"
     role: grad
     image: /img/people/fotoSamuelSalazar.jpg
     bio: "MSc. Student - Software Engineering"
 
 
-udgLaura:
+lauraBello:
     display_name: "Laura Bello"
     role: ugrad
     image: /img/people/fotoLauraBello.jpg
 
-udgMaria:
-    display_name: "Maria Arevalo"
-    role: ugrad
-    image: /img/people/fotoMariaArevalo.jpg
-
-udgValeria:
+valeriaVanegas:
     display_name: "Valeria Vanegas"
     role: ugrad
     image: /img/people/valeria.jpg
-udgSantiago:
+
+michaelOsorio:
+    display_name: "Michael Osorio"
+    role: ugrad
+    image: /img/people/avatar2.png
+
+santiagoSaenz:
     display_name: "Santiago Saenz"
     role: ugrad
     image: /img/people/fotoSantiagoSaenz.jpg
 
-udgCamilo:
+camiloSanchez:
     display_name: "Camilo Sanchez"
     role: ugrad
     image: /img/people/fotoCamiloSanchez.jpg
 
-udgMichael:
-    display_name: "Michael Osorio"
-    role: ugrad
-    image: /img/people/avatar2.png
 
 collSandraRueda:
     display_name: "Sandra Rueda"
@@ -141,6 +126,21 @@ collChristopher:
     image: "/img/people/fotoChristopherV.jpg"
     webpage: "http://www.christophervendome.com"
     bio: "Assistant Professor at Miami University, Ohio, USA"
+
+santiagoLinan:
+    display_name: "Santiago Liñán"
+    role: collab
+    image: /img/people/fotoSantiagoLinan.jpg
+    # bio: "MSc. Student - Software Engineering"
+    webpage: "https://slinan.github.io/"
+
+dianaSolano:
+    display_name: "Diana Solano"
+    role: collab
+    image: /img/people/diana.jpg
+    # bio: "MSc. Student - Industrial Engineering"
+
+
 
 alumOlga:
     display_name: "Olga Vega"
