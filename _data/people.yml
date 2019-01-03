@@ -17,6 +17,19 @@ camiloEscobar:
     image: /img/people/fotoCamiloEscobarV.jpg
     bio: "Ph.D. Student"
 
+santiagoLinan:
+    display_name: "Santiago Liñán"
+    role: grad
+    image: /img/people/fotoSantiagoLinan.jpg
+    bio: "MSc. Student - Software Engineering"
+    webpage: "https://slinan.github.io/"
+
+dianaSolano:
+    display_name: "Diana Solano"
+    role: grad
+    image: /img/people/diana.jpg
+    bio: "MSc. Student - Industrial Engineering"
+
 sergioYodeb:
     display_name: "Sergio Velásquez"
     role: grad
@@ -77,18 +90,6 @@ camiloSanchez:
     role: ugrad
     image: /img/people/fotoCamiloSanchez.jpg
 
-santiagoLinan:
-    display_name: "Santiago Liñán"
-    role: collab
-    image: /img/people/fotoSantiagoLinan.jpg
-    # bio: "MSc. Student - Software Engineering"
-    webpage: "https://slinan.github.io/"
-
-dianaSolano:
-    display_name: "Diana Solano"
-    role: collab
-    image: /img/people/diana.jpg
-    # bio: "MSc. Student - Industrial Engineering"
 
 collSandraRueda:
     display_name: "Sandra Rueda"
