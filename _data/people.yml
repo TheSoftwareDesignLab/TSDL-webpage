@@ -16,6 +16,7 @@ camiloEscobar:
     role: grad
     image: /img/people/fotoCamiloEscobarV.jpg
     bio: "Ph.D. Student"
+    webpage: "http://caev03.github.io"
 
 santiagoLinan:
     display_name: "Santiago Liñán"
