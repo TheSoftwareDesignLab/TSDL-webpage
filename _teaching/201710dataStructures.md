@@ -8,5 +8,5 @@ people:
 term: 2017-10
 
 layout: project
-image: /img/project-images/closed.png
+# image: /img/project-images/closed.png
 ---
