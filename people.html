@@ -1,48 +1,531 @@
----
-layout: default
-title: People
-notitle: true
-role-tables:
-- - roles: [faculty]
-    width: 12
-    image: true
-- - roles: [grad]
-    width: 12
-    image: true
-- - roles: [ugrad]
-    width: 12
-    image: true
-- - roles: [collab]
-    width: 12
-    image: true
-- - roles: [alum]
-    width: 12
-    image: true
----
+<!DOCTYPE html>
+<html>
 
-{% for role-table in page.role-tables %} {% for role-column in role-table %} {% for role-key in role-column.roles %} {% for
-role in site.roles %} {% if role.key == role-key %}
+<head>
+    <title>The Software Design Lab: People</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script src="/js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/group.css">
+    <link rel="shortcut icon" href="/img/tsdl.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/flipster.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container" style="font-size: 1.35em !important;">
+            <div class="navbar-brand" style="font-size: 1.3em !important;">
+                <!--The Software Design Lab-->
+                <a href="/" class="">
+                    <img src="/img/tsdlFondosOscuros.png" alt="TESDLA" id="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+
+                         
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/">
+                            Home
+                        </a>
+                    </li>
+
+                        
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/people.html">
+                            People
+                        </a>
+                    </li>
+
+                        
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/teaching.html">
+                            Teaching
+                        </a>
+                    </li>
+
+                        
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/research.html">
+                            Research
+                        </a>
+                    </li>
+
+                        
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/development.html">
+                            Development
+                        </a>
+                    </li>
+
+                        
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/publications.html">
+                            Publications
+                        </a>
+                    </li>
+
+                        
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/code.html">
+                            Code
+                        </a>
+                    </li>
+
+                        
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-container" style="padding-top: 20px">
+        <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+              
 <div class="row">
     <div class="col-lg-6" style="background-color: #33a5db; color: white; padding-top: 10px">
-        <h1>{{ role.name }}</h1>
+        <h1>Faculty</h1>
     </div>
 </div>
-<div class="row role {{ role.key }}" style="padding-top: 15px">
-    {% for item in site.data.people %} {% assign person = item[1] %} {% if person.role == role.key %}
+<div class="row role faculty" style="padding-top: 15px">
+      
     <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
-        <a href="{{person.webpage}}">
+        <a href="https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/">
             <div class="card bg-inverse">
-                <img class="card-img" src="{{ site.base }}{{ person.image }}" alt="{{person.display_name}}">
+                <img class="card-img" src="/img/people/fotoMarioLinaresV.jpg" alt="Mario Linares-Vásquez">
                 <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
                     <div style="background-color: #363636cc; color: white; padding-left: 5px">
-                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">{{person.display_name}}</h3>
-                        <h5 style="font-size: 14px">{{person.bio}}</h5>
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Mario Linares-Vásquez</h3>
+                        <h5 style="font-size: 14px">Assistant Professor</h5>
                     </div>
                 </div>
             </div>
         </a>
     </div>
-    {% endif %} {% endfor %}
+                                                                                
 </div>
 <div style="margin-top: 20px"></div>
-{% endif %} {% endfor %} {% endfor %} {% endfor %} {% endfor %}
+                            
+<div class="row">
+    <div class="col-lg-6" style="background-color: #33a5db; color: white; padding-top: 10px">
+        <h1>Graduate Students</h1>
+    </div>
+</div>
+<div class="row role grad" style="padding-top: 15px">
+         
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoAlejandroMazuera.jpg" alt="Alejandro Mazuera">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Alejandro Mazuera</h3>
+                        <h5 style="font-size: 14px">Ph.D. Student</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="http://caev03.github.io">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoCamiloEscobarV.jpg" alt="Camilo Escobar-Velásquez">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Camilo Escobar-Velásquez</h3>
+                        <h5 style="font-size: 14px">Ph.D. Student</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="https://slinan.github.io/">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoSantiagoLinan.jpg" alt="Santiago Liñán">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Santiago Liñán</h3>
+                        <h5 style="font-size: 14px">MSc. Student - Software Engineering</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/diana.jpg" alt="Diana Solano">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Diana Solano</h3>
+                        <h5 style="font-size: 14px">MSc. Student - Industrial Engineering</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoSergioVelasquez.jpg" alt="Sergio Velásquez">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Sergio Velásquez</h3>
+                        <h5 style="font-size: 14px">MSc. Student - Software Engineering</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoAna.jpg" alt="Anamaria Mojica">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Anamaria Mojica</h3>
+                        <h5 style="font-size: 14px">MSc. Student - Information Engineering</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoDiegoRodriguez.jpg" alt="Diego Rodríguez-Baquero">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Diego Rodríguez-Baquero</h3>
+                        <h5 style="font-size: 14px">MSc. Student - Software Engineering</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/avatar2.png" alt="Camilo Ortiz-Casas">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Camilo Ortiz-Casas</h3>
+                        <h5 style="font-size: 14px">MSc. Student - Information Security</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoMariaArevalo.jpg" alt="Maria Arevalo">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Maria Arevalo</h3>
+                        <h5 style="font-size: 14px">MSc. Student - Software Engineering</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoSamuelSalazar.jpg" alt="Samuel Salazar">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Samuel Salazar</h3>
+                        <h5 style="font-size: 14px">MSc. Student - Software Engineering</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+                                                  
+</div>
+<div style="margin-top: 20px"></div>
+                        
+<div class="row">
+    <div class="col-lg-6" style="background-color: #33a5db; color: white; padding-top: 10px">
+        <h1>Undergraduate Students</h1>
+    </div>
+</div>
+<div class="row role ugrad" style="padding-top: 15px">
+                                       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoLauraBello.jpg" alt="Laura Bello">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Laura Bello</h3>
+                        <h5 style="font-size: 14px"></h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/valeria.jpg" alt="Valeria Vanegas">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Valeria Vanegas</h3>
+                        <h5 style="font-size: 14px"></h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/avatar2.png" alt="Michael Osorio">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Michael Osorio</h3>
+                        <h5 style="font-size: 14px"></h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoSantiagoSaenz.jpg" alt="Santiago Saenz">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Santiago Saenz</h3>
+                        <h5 style="font-size: 14px"></h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoCamiloSanchez.jpg" alt="Camilo Sanchez">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Camilo Sanchez</h3>
+                        <h5 style="font-size: 14px"></h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+                                   
+</div>
+<div style="margin-top: 20px"></div>
+                          
+<div class="row">
+    <div class="col-lg-6" style="background-color: #33a5db; color: white; padding-top: 10px">
+        <h1>Collaborators</h1>
+    </div>
+</div>
+<div class="row role collab" style="padding-top: 15px">
+                                                      
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="https://profesores.virtual.uniandes.edu.co/sarueda/en/inicio-en/">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoSandraRueda.jpg" alt="Sandra Rueda">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Sandra Rueda</h3>
+                        <h5 style="font-size: 14px">Associate Professor at Universidad de Los Andes, Bogotá, Colombia</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="http://www.inf.usi.ch/faculty/bavota/">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoGabrieleBavota.jpg" alt="Gabriele Bavota">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Gabriele Bavota</h3>
+                        <h5 style="font-size: 14px">Assistant Professor at University of Lugano, Lugano, Switzerland</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="https://profesores.virtual.uniandes.edu.co/ncardozo/en/inicio-en/">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoNicolasCardozo.jpg" alt="Nicolas Cardozo">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Nicolas Cardozo</h3>
+                        <h5 style="font-size: 14px">Assistant Professor at Universidad de Los Andes, Bogotá, Colombia</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="https://www.cs.colostate.edu/~lmorenoc/">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoLauraMoreno.jpg" alt="Laura Moreno">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Laura Moreno</h3>
+                        <h5 style="font-size: 14px">Assistant Professor at Colorado State University, Colorado, USA</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="http://www.cs.wm.edu/~denys/index.html">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoDenys.jpg" alt="Denys Poshyvanyk">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Denys Poshyvanyk</h3>
+                        <h5 style="font-size: 14px">Associate Professor at The College of William and Mary, Virginia, USA</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="http://www.ing.unisannio.it/mdipenta/">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/dipenta.jpg" alt="Massimiliano Di Penta">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Massimiliano Di Penta</h3>
+                        <h5 style="font-size: 14px">Associate Professor at University of Sannio, Benevento, Italy</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="http://www.christophervendome.com">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoChristopherV.jpg" alt="Christopher Vendome">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Christopher Vendome</h3>
+                        <h5 style="font-size: 14px">Assistant Professor at Miami University, Ohio, USA</h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+              
+</div>
+<div style="margin-top: 20px"></div>
+                        
+<div class="row">
+    <div class="col-lg-6" style="background-color: #33a5db; color: white; padding-top: 10px">
+        <h1>Alumni</h1>
+    </div>
+</div>
+<div class="row role alum" style="padding-top: 15px">
+                                                                           
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoOlgaVega.jpg" alt="Olga Vega">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Olga Vega</h3>
+                        <h5 style="font-size: 14px"></h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoSofiaHernandez.jpg" alt="Sofia Hernández">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Sofia Hernández</h3>
+                        <h5 style="font-size: 14px"></h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+       
+    <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+        <a href="">
+            <div class="card bg-inverse">
+                <img class="card-img" src="/img/people/fotoJairoBautista.jpg" alt="Jairo Bautista">
+                <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
+                    <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">Jairo Bautista</h3>
+                        <h5 style="font-size: 14px"></h5>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+     
+</div>
+<div style="margin-top: 20px"></div>
+    
+
+
+    </div>
+    <!-- /container -->
+
+    <!-- Support retina images. -->
+</body>
+
+<script type="text/javascript" src="/js/srcset-polyfill.js"></script>
+
+
+</html>
