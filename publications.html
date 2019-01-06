@@ -3,125 +3,60 @@ layout: default
 title: Publications 
 notitle: true 
 ---
+<style>
+ol.bibliography {
+    list-style: none;
+    padding-left: 0px;
+}
 
-                
+ol li {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin-bottom: 0.25rem;
+    border: 1px black solid;
+}
+</style>
+<style>
+    .modal-dialog{
+        max-width: 60vw !important;
+    }
+</style>
+
 <div class="row">
-        <div class="col-8">
+        <div class="col-12">
                 <div class="form-group">
                                 <label for="inputAddress">Filter articles</label>
-                                <input type="text" class="form-control" id="search" placeholder="Search">
+                                <input type="text" class="form-control" id="search" placeholder="Search by title, author(s), conf/journal, year or doi">
                 </div>    
         </div>         
 </div>
+{% bibliography --file pubs%}
 
-<div id="articles">
-</div>
 <script>
-var nData;
 $(document).on('keyup paste', 'input[id^=search]', function() {
-        refreshData(nData);
+        refreshData();
 });
 
-$.get(
-    "bib/jsonBib.json",
-    function(data) {
-            nData = data;
-            refreshData(data);
+function refreshData () {
+    $("ol>li").each(function(){
+        $(this).hide()
+    })
+    var sString = $("#search").val().toLowerCase().trim()
+    $("ol>li").each(function(){
+        var title = $(this).find(".bibtitle").html().toLowerCase()
+        var author = $(this).find(".bibauthor").html().toLowerCase()
+        var book = $(this).find(".bibbook").html().toLowerCase()
+        var year = $(this).find(".bibyear").html().toLowerCase()
+        var doi = $(this).find(".bibdoi").html().toLowerCase()
+        if(title.includes(sString) || author.includes(sString) || book.includes(sString) || year.includes(sString) || doi.includes(sString) ){
+            $(this).show()
+        }      
+    })
+    if(sString == ""){
+        $("ol>li").each(function(){
+            $(this).show()
+        })
     }
-);
 
-function refreshData (data) {
-        document.getElementById('articles').innerHTML="";
-        data.forEach(article => {
-
-                searchText = document.getElementById('search').value;
-                textFilter = false;
-
-                if(searchText && searchText != '' && searchText != ' ')
-                {
-                        textFilter = true;
-                        searchText = searchText.toLowerCase();
-                }
-                createAuthorsText (article);
-                if((textFilter == false) ||
-                (textFilter && 
-                ((article['title'] && article['title'].toLowerCase().includes(searchText))
-                || (article['author'] && article['authorText'].toLowerCase().includes(searchText))
-                || (article['container-title'] && article['container-title'].toLowerCase().includes(searchText))
-                || (article['issued'] && article['issued']['date-parts'] && JSON.stringify(article['issued']['date-parts']).toLowerCase().includes(searchText))
-                ))) {
-                var nDiv = document.createElement('div');
-                nDiv.classList.add('card', 'card-header', 'bg-faded', 'customBib');
-                nDiv.innerHTML = createArticleText(article);
-                if(article['URL'])
-                {
-
-                if(article['DOI']) {
-                        var doi = document.createElement('a');
-                        doi.classList.add('customBadge');
-                        doi.innerHTML = "doi: "+article['DOI'];
-                        doi.href=article['URL'];
-
-                        nDiv.appendChild(doi);
-                }
-                else {
-                var link = document.createElement('a');
-                link.innerHTML = "URL";
-                link.href=article.url;
-                nDiv.appendChild(link);
-                }
-                }
-
-                if(article['DOI'] && !article['URL'])
-                {
-                        var doi = document.createElement('a');
-                        doi.classList.add('customBadge');
-                        doi.innerHTML = "doi: "+article['DOI'];
-                        nDiv.appendChild(doi);
-                }
-                
-                
-
-                document.getElementById('articles').appendChild(nDiv);
-                }
-            });
-}
-
-function createAuthorsText(article) {
-        article['authorText'] = '';
-        if(article ['author']) {
-                var authors = article['author'];
-                authors.forEach((pAuth, index) => {
-                        article['authorText'] = article['authorText'] + pAuth['given'] + ' ' + pAuth['family'];
-                        if(index < authors.length-2) {
-                                article['authorText'] = article['authorText'] + ', ';
-                        }
-                        else if(index < authors.length-1) {
-                                article['authorText'] = article['authorText'] + ' and ';
-                        }
-        })}
-}
-
-function createArticleText(article) {
-        var text = '';
-        if(article['title']) {
-                text = text + '<h5>'+article['title']+'</h5>';
-        }
-
-        if(article ['author']) {
-        text = text + article['authorText'] + ", ";
-        }
-
-        
-
-        if(article['container-title']) {
-                text = text + "<i>" + article['container-title'] + "</i>";
-        }
-
-        if(article['issued']) {
-                text = text + article['issued']['date-parts'];
-        }
-
-return text;
 }
 </script>

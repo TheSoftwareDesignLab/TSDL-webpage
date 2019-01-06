@@ -1,0 +1,30 @@
+---
+layout: default
+title: Teaching
+notitle: true
+---
+
+<!--<div class="card-columns">-->
+    {% comment %}
+    Sort the projects by date, putting those without dates last
+    {% endcomment %}
+    {% assign projects_by_term = site.teaching | group_by: 'term' %}
+    {% assign terms = projects_by_term | reverse %}
+    {% for term in terms %}
+
+    <div class="row">
+        <div class="col-lg-5" style="background-color: #33a5db; color: white; padding-top: 10px">
+            <h1>{{term.name}}</h1>
+        </div>
+    </div>        
+                <div class="card-body">
+                        {% assign projects = term.items | sort: 'last-updated', 'first' | reverse %}
+                        <div class="card-columns">
+                        {% for project in projects %}
+                            {% if project.status != "inactive" %} 
+                                {% include project-card.html project=p %}
+                            {% endif %}
+                        {% endfor %}
+                        </div>
+                </div>
+    {% endfor %}

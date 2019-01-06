@@ -1,7 +1,7 @@
 name: The Software Design Lab
 url: https://thesoftwaredesignlab.github.io/
 
-exclude: [bibble, README.md, Makefile, screenshot.png]
+exclude: [_rschprojects/accaa-projects.md, _rschprojects/ioaa-project.md, Makefile, screenshot.png]
 
 # colorize code snippets with the pygments module
 highlighter: rouge
@@ -37,13 +37,22 @@ front_page_news: 8
 # Base pathname for links.
 base: ''
 
-include: ["_rschprojects","_dvlpprojects"]
+include: ["_rschprojects","_dvlpprojects", "_teaching"]
 
 collections:
   rschprojects:
     output: true
   dvlpprojects:
     output: true
+  teaching:
+    output: true
+
+scholar:
+  style: apa
+  source: ./bib
+  sort_by: year,title
+  order: descending,ascending
+  bibliography_template: bib
 
 
 # Navigation bar links.
@@ -52,6 +61,8 @@ navigation:
     link: /
   - title: People
     link: /people.html
+  - title: Teaching
+    link: /teaching.html
   - title: Research
     link: /research.html
   - title: Development
@@ -60,3 +71,7 @@ navigation:
     link: /publications.html
   - title: Code
     link: /code.html
+  - title: Contact
+    link: /contact.html
+
+plugins: ['jekyll/scholar']
