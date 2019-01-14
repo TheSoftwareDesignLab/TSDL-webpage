@@ -1,7 +1,7 @@
 name: The Software Design Lab
 url: https://thesoftwaredesignlab.github.io/
 
-exclude: [_rschprojects/accaa-projects.md, _rschprojects/ioaa-project.md, Makefile, screenshot.png]
+exclude: [Makefile, screenshot.png]
 
 # colorize code snippets with the pygments module
 highlighter: rouge
