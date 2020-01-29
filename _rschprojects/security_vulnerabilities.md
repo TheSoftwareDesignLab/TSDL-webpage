@@ -8,11 +8,12 @@ people:
   - collGabrieleBavota
   - collSandraRueda
   - alejandroMazuera
-  - mastJairo
-  - camiloEscobar
+  - lauraBello
   - camiloOrtiz
-  - camiloSanchez
+  # - camiloSanchez
   - santiagoSaenz
+  - camiloEscobar
+  # - mastJairo
 
 topic: Quality Attributes in Mobile Apps
 layout: project

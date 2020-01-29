@@ -50,8 +50,8 @@ collections:
 scholar:
   style: apa
   source: ./bib
-  sort_by: year,title
-  order: descending,ascending
+  sort_by: year
+  order: descending
   bibliography_template: bib
 
 

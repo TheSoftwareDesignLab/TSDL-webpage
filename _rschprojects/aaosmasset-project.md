@@ -4,6 +4,8 @@ description: "The amount of android applications is having a tremendous increasi
 
 people:
   - camiloEscobar
+  - michaelOsorio
+  - diegoRiveros
   - marioLinares
   - collGabrieleBavota
   - collChristopher

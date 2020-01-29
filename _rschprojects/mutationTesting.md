@@ -6,6 +6,7 @@ description: Mutation Testing is a type of software testing where we mutate (cha
 people:
   - marioLinares
   - camiloEscobar
+  - michaelOsorio
   - diegoRodriguez
   - collGabrieleBavota
   - collMassimiliano

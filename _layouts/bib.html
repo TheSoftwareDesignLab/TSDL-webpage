@@ -5,7 +5,7 @@ layout: default
 <h5><span class="bibtitle">{{ entry.title }}.</span> <span class="bibyear">{{ entry.year }}</span></h5>
 <span class="bibauthor">{{ entry.author }}.</span><br>
 <em class="bibbook">{% if entry.booktitle %}{{ entry.booktitle}}{% else %}{{ entry.journal}}{%endif%}</em><br>
-[<a href="{{ entry.url }}"> doi: <span class="bibdoi">{{ entry.doi }}</span> </a>]
+[<a href="https://doi.org/{{ entry.doi }}"> doi: <span class="bibdoi">{{ entry.doi }}</span> </a>]
 [<a href="#" data-toggle="modal" data-target="#{{ entry.key }}"> Bibtex </a>]
 {% if entry.preprint %} [<a href="{{ entry.preprint }}"> preprint </a> ] {% endif %}
 {% if entry.onlineappen %} [<a href="{{ entry.onlineappen }}"> Online Appendix </a> ] {% endif %}

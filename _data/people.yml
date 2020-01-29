@@ -10,7 +10,9 @@ alejandroMazuera:
     display_name: "Alejandro Mazuera"
     role: grad
     image: /img/people/fotoAlejandroMazuera.jpg
-    bio: "Ph.D. Student" 
+    bio: "Ph.D. Student"
+    webpage: "https://www.inf.usi.ch/phd/mazuerarozo/"
+
 camiloEscobar:
     display_name: "Camilo Escobar-Velásquez"
     role: grad
@@ -18,18 +20,11 @@ camiloEscobar:
     bio: "Ph.D. Student"
     webpage: "http://caev03.github.io"
 
-santiagoLinan:
-    display_name: "Santiago Liñán"
+anamariaMojica:
+    display_name: "Anamaria Mojica"
     role: grad
-    image: /img/people/fotoSantiagoLinan.jpg
-    bio: "MSc. Student - Software Engineering"
-    webpage: "https://slinan.github.io/"
-
-dianaSolano:
-    display_name: "Diana Solano"
-    role: grad
-    image: /img/people/diana.jpg
-    bio: "MSc. Student - Industrial Engineering"
+    image: /img/people/fotoAna.jpg
+    bio: "MSc. Student - Information Engineering"
 
 sergioYodeb:
     display_name: "Sergio Velásquez"
@@ -37,16 +32,14 @@ sergioYodeb:
     image: /img/people/fotoSergioVelasquez.jpg
     bio: "MSc. Student - Software Engineering"  
 
-anamariaMojica:
-    display_name: "Anamaria Mojica"
-    role: grad
-    image: /img/people/fotoAna.jpg
-    bio: "MSc. Student - Information Engineering"
+
+
 diegoRodriguez:
     display_name: "Diego Rodríguez-Baquero"
     role: grad
     image: /img/people/fotoDiegoRodriguez.jpg
     bio: "MSc. Student - Software Engineering"
+
 camiloOrtiz:
     display_name: "Camilo Ortiz-Casas"
     role: grad
@@ -59,45 +52,51 @@ mariaArevalo:
     image: /img/people/fotoMariaArevalo.jpg
     bio: "MSc. Student - Software Engineering"
 
-samuelSalazar:
-    display_name: "Samuel Salazar"
-    role: grad
-    image: /img/people/fotoSamuelSalazar.jpg
-    bio: "MSc. Student - Software Engineering"
-
-
-lauraBello:
-    display_name: "Laura Bello"
-    role: ugrad
-    image: /img/people/fotoLauraBello.jpg
-
-valeriaVanegas:
-    display_name: "Valeria Vanegas"
-    role: ugrad
-    image: /img/people/valeria.jpg
-
 michaelOsorio:
     display_name: "Michael Osorio"
     role: ugrad
+    image: /img/people/michaelOsorio.jpg
+
+sergioMayorga:
+    display_name: "Sergio Mayorga"
+    role: ugrad
     image: /img/people/avatar2.png
 
-santiagoSaenz:
-    display_name: "Santiago Saenz"
+julianManrique:
+    display_name: "Julian Manrique"
     role: ugrad
-    image: /img/people/fotoSantiagoSaenz.jpg
+    image: /img/people/avatar2.png
 
-camiloSanchez:
-    display_name: "Camilo Sanchez"
+juanEspitia:
+    display_name: "Juan Sebastian Espitia"
     role: ugrad
-    image: /img/people/fotoCamiloSanchez.jpg
+    image: /img/people/avatar2.png
 
+camiloPulido:
+    display_name: "Juan Camilo Pulido"
+    role: ugrad
+    image: /img/people/avatar2.png
 
-collSandraRueda:
-    display_name: "Sandra Rueda"
-    role: "collab"
-    image: /img/people/fotoSandraRueda.jpg
-    webpage: "https://profesores.virtual.uniandes.edu.co/sarueda/en/inicio-en/"
-    bio: "Associate Professor at Universidad de Los Andes, Bogotá, Colombia"
+cristianNovoa:
+    display_name: "Cristian Novoa"
+    role: ugrad
+    image: /img/people/avatar2.png
+
+mariaLeon:
+    display_name: "Maria del Rosario Leon"
+    role: ugrad
+    image: /img/people/img_avatar2.png
+
+danielaRocha:
+    display_name: "Daniela Rocha"
+    role: ugrad
+    image: /img/people/img_avatar2.png
+
+diegoRiveros:
+    display_name: "Diego Riveros"
+    role: ugrad
+    image: /img/people/avatar2.png
+
 
 collGabrieleBavota:
     display_name: "Gabriele Bavota"
@@ -112,6 +111,15 @@ collNicolasCardozo:
     image: /img/people/fotoNicolasCardozo.jpg
     webpage: "https://profesores.virtual.uniandes.edu.co/ncardozo/en/inicio-en/"
     bio: "Assistant Professor at Universidad de Los Andes, Bogotá, Colombia"
+
+collSandraRueda:
+    display_name: "Sandra Rueda"
+    role: "collab"
+    image: /img/people/fotoSandraRueda.jpg
+    webpage: "https://profesores.virtual.uniandes.edu.co/sarueda/en/inicio-en/"
+    bio: "Associate Professor at Universidad de Los Andes, Bogotá, Colombia"
+
+
 
 collLauraMoreno: 
     display_name: "Laura Moreno"
@@ -141,14 +149,48 @@ collChristopher:
     webpage: "http://www.christophervendome.com"
     bio: "Assistant Professor at Miami University, Ohio, USA"
 
+collIvana:
+    display_name: "Ivana Dusparic"
+    role: "collab"
+    image: "/img/people/fotoIvanaDusparic.jpg"
+    webpage: "https://www.scss.tcd.ie/Ivana.Dusparic/"
+    bio: "Assistant Professor at Trinity College, Dublin, Ireland"
 
+lauraBello:
+    display_name: "Laura Bello (Alumni)"
+    role: collab
+    image: /img/people/fotoLauraBello.jpg
+    bio: "Industry - Rappi"
 
+williamRavelo:
+    display_name: "William Ravelo (Alumni)"
+    role: collab
+    image: /img/people/williamRavelo.jpg
+    bio: "Industry - Picap"
 
-alumOlga:
-    display_name: "Olga Vega"
+dianaSolano:
+    display_name: "Diana Solano"
     role: alum
-    image: /img/people/fotoOlgaVega.jpg
-    #bio: "Ph.D. Student"
+    image: /img/people/diana.jpg
+    bio: "MSc. Student - Industrial Engineering"
+    
+santiagoLinan:
+    display_name: "Santiago Liñán"
+    role: alum
+    image: /img/people/fotoSantiagoLinan.jpg
+    bio: "MSc. Student - Software Engineering"
+    webpage: "https://slinan.github.io/"
+
+samuelSalazar:
+    display_name: "Samuel Salazar"
+    role: alum
+    image: /img/people/fotoSamuelSalazar.jpg
+    bio: "MSc. Student - Software Engineering"
+
+valeriaVanegas:
+    display_name: "Valeria Vanegas"
+    role: alum
+    image: /img/people/valeria.jpg
 
 alumSofia:
     display_name: "Sofia Hernández"
@@ -159,3 +201,33 @@ mastJairo:
     display_name: "Jairo Bautista"
     role: alum
     image: /img/people/fotoJairoBautista.jpg
+
+santiagoSaenz:
+    display_name: "Santiago Saenz"
+    role: alum
+    image: /img/people/fotoSantiagoSaenz.jpg
+
+# camiloSanchez:
+#     display_name: "Camilo Sanchez"
+#     role: alum
+#     image: /img/people/fotoCamiloSanchez.jpg
+
+jmDominguez:
+    display_name: "Juan Manuel Dominguez"
+    role: alum
+    image: /img/people/avatar2.png
+
+andresLopez:
+    display_name: "Andrés Lopez"
+    role: alum
+    image: /img/people/avatar2.png
+
+sergioPardo:
+    display_name: "Sergio Pardo"
+    role: alum
+    image: /img/people/avatar2.png
+
+javierTroconis:
+    display_name: "Javier Troconis"
+    role: alum
+    image: /img/people/avatar2.png

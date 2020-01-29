@@ -2,7 +2,7 @@
 layout: post
 title: "Accepted paper!"
 icon: newspaper-o
-image: https://tosem.acm.org/elements/img/tosem_th.png
+image: ../img/news/tosem_th.png
 shortnews: true
 ---
 

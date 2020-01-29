@@ -4,9 +4,12 @@ description: Models based testing enables software developers to derive abstract
 
 
 people:
-  - santiagoLinan
-  - lauraBello
   - mariaArevalo
+  - camiloEscobar
+  - jmDominguez
+  - andresLopez
+  - lauraBello
+  - santiagoLinan
 
 topic: Software Testing
 layout: project
