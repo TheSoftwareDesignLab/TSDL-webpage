@@ -1,43 +1,23 @@
-@font-face {
-  font-family: "TSDLFont";
-  src: url("../fonts/Raleway-Regular.ttf"); }
-@font-face {
-  font-family: "TSDLFontBold";
-  src: url("../fonts/Raleway-Bold.ttf"); }
+@font-face { font-family: "TSDLFont"; src: url("../fonts/Raleway-Regular.ttf"); }
+
+@font-face { font-family: "TSDLFontBold"; src: url("../fonts/Raleway-Bold.ttf"); }
+
 /* Space out content a bit */
-body {
-  font-family: "TSDLFont";
-  font-size: 14px !important;
-  font-weight: 100; }
+body { font-family: "TSDLFont"; font-size: 14px !important; font-weight: 100; }
 
-h1 {
-  font-size: 20px;
-  font-family: "TSDLFontBold"; }
+h1 { font-size: 20px; font-family: "TSDLFontBold"; }
 
-#pageImage {
-  width: 70vw; }
+#pageImage { width: 70vw; }
 
-.header {
-  border-bottom: 1px solid #EEE;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: "TSDLFontBold"; }
+.header { border-bottom: 1px solid #EEE; padding-bottom: 10px; margin-bottom: 20px; text-align: center; font-family: "TSDLFontBold"; }
 
-.footer {
-  /* padding-top: 19px; */
-  color: #999;
-  border-top: 1px solid #EEE;
-  text-align: center;
-  font-size: 11px; }
-  .footer a:link, .footer a:visited {
-    color: #999; }
+.footer { /* padding-top: 19px; */ color: #999; border-top: 1px solid #EEE; text-align: center; font-size: 11px; }
 
-.fa {
-  color: #999; }
+.footer a:link, .footer a:visited { color: #999; }
 
-a > .fa {
-  display: inline; }
+.fa { color: #999; }
+
+a > .fa { display: inline; }
 
 /* /\* Customize container *\/ */
 /* @media (min-width: 768px) { */
@@ -46,160 +26,85 @@ a > .fa {
 /*     } */
 /* } */
 /* Jumbotron */
-.jumbotron {
-  text-align: justify;
-  padding-top: 1.5em;
-  padding-bottom: 0.5em;
-  font-size: 15px; }
+.jumbotron { text-align: justify; padding-top: 1.5em; padding-bottom: 0.5em; font-size: 15px; }
 
 /* Group logo */
-#logo {
-  width: 210px;
-  height: auto; }
+#logo { width: 210px; height: auto; }
 
 /* Front page news. */
-ul.news .date {
-  color: #999;
-  font-weight: bold; }
-ul.news > li {
-  margin-top: 1em; }
+ul.news .date { color: #999; font-weight: bold; }
 
-@media (min-width: 576px) {
-  .project-people {
-    column-count: 2; }
+ul.news > li { margin-top: 1em; }
 
-  .card-columns {
-    column-count: 2; }
+@media (min-width: 576px) { .project-people { column-count: 2; }
+  .card-columns { column-count: 2; }
+  .role.faculty { column-count: 2; }
+  .role.grad { column-count: 2; }
+  .role.ugrad { column-count: 2; }
+  .role.collab { column-count: 2; }
+  .role.alum { column-count: 2; }
+  .project-image { width: 100%; } }
 
-  .role.faculty {
-    column-count: 2; }
+@media (min-width: 768px) { .project-people { column-count: 3; }
+  .card-columns { column-count: 2; }
+  .role.faculty { column-count: 3; }
+  .role.grad { column-count: 3; }
+  .role.ugrad { column-count: 3; }
+  .role.collab { column-count: 3; }
+  .role.alum { column-count: 3; }
+  .project-image { width: 100%; } }
 
-  .role.grad {
-    column-count: 2; }
+@media (min-width: 1024px) { .project-people { column-count: 3; }
+  .card-columns { column-count: 2; }
+  .role.faculty { column-count: 5; }
+  .role.grad { column-count: 5; }
+  .role.ugrad { column-count: 5; }
+  .role.collab { column-count: 5; }
+  .role.alum { column-count: 5; }
+  .project-image { width: 100%; margin-bottom: 10px; } }
 
-  .role.ugrad {
-    column-count: 2; }
+.title img { max-width: 50%; }
 
-  .role.collab {
-    column-count: 2; }
+section { margin-bottom: 2em; }
 
-  .role.alum {
-    column-count: 2; }
+.profile { object-fit: cover; }
 
-  .project-image {
-    width: 100%; } }
-@media (min-width: 768px) {
-  .project-people {
-    column-count: 3; }
+.noprofile circle { fill: #EEE; }
 
-  .card-columns {
-    column-count: 2; }
+.noprofile text { font-weight: 700; fill: white; }
 
-  .role.faculty {
-    column-count: 3; }
+.card .profile { height: 40px; width: 40px; margin: 3px; }
 
-  .role.grad {
-    column-count: 3; }
+.card .card-footer { padding: 0.5em; }
 
-  .role.ugrad {
-    column-count: 3; }
+.person { margin-bottom: 10px; }
 
-  .role.collab {
-    column-count: 3; }
+.person .profile { height: 70px; width: 70px; }
 
-  .role.alum {
-    column-count: 3; }
+.person .bio { color: #999; }
 
-  .project-image {
-    width: 100%; } }
-@media (min-width: 1024px) {
-  .project-people {
-    column-count: 3; }
+.person .person-name { margin: 0; }
 
-  .card-columns {
-    column-count: 2; }
+.person-without-image { margin: 0; }
 
-  .role.faculty {
-    column-count: 5; }
+.person-without-image .bio { margin-left: 1em; }
 
-  .role.grad {
-    column-count: 5; }
+svg { vertical-align: middle; }
 
-  .role.ugrad {
-    column-count: 5; }
+.center { position: relative; top: 50%; left: 50%; transform: translate(-25%, -55%); }
 
-  .role.collab {
-    column-count: 5; }
+.body-container { padding: 0px 50px; }
 
-  .role.alum {
-    column-count: 5; }
+.navbar-dark .navbar-nav .active > .nav-link { color: #33a5db; }
 
-  .project-image {
-    width: 100%;
-    margin-bottom: 10px; } }
-.title img {
-  max-width: 50%; }
+.navbar-dark .navbar-nav .nav-link:hover { color: #33a5db55; }
 
-section {
-  margin-bottom: 2em; }
+.navbar-dark .navbar-nav .nav-link { color: #fff; }
 
-.profile {
-  object-fit: cover; }
+.customBib { margin-bottom: 4px; }
 
-.noprofile circle {
-  fill: #EEE; }
-.noprofile text {
-  font-weight: 700;
-  fill: white; }
+.customBadge { font-weight: bold; }
 
-.card .profile {
-  height: 40px;
-  width: 40px;
-  margin: 3px; }
-.card .card-footer {
-  padding: 0.5em; }
+.carousel-caption { background-color: rgba(0, 0, 0, 0.6); }
 
-.person {
-  margin-bottom: 10px; }
-  .person .profile {
-    height: 70px;
-    width: 70px; }
-  .person .bio {
-    color: #999; }
-  .person .person-name {
-    margin: 0; }
-
-.person-without-image {
-  margin: 0; }
-  .person-without-image .bio {
-    margin-left: 1em; }
-
-svg {
-  vertical-align: middle; }
-
-.center {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-25%, -55%); }
-
-.body-container {
-  padding: 0px 50px; }
-
-.navbar-dark .navbar-nav .active > .nav-link {
-  color: #33a5db; }
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #33a5db55; }
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff; }
-
-.customBib {
-  margin-bottom: 4px; }
-
-.customBadge {
-  font-weight: bold; }
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.6); }
+/*# sourceMappingURL=group.css.map */
