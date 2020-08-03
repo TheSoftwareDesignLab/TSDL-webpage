@@ -29,14 +29,23 @@ role in site.roles %} {% if role.key == role-key %}
 </div>
 <div class="row role {{ role.key }}" style="padding-top: 15px">
     {% for item in site.data.people %} {% assign person = item[1] %} {% if person.role == role.key %}
+    {% if person.role == "alum" %}
+    <div class="col-lg-2 col-md-3 col-sm-4" style="margin-top: 18px">
+    {% else %}
     <div class="col-lg-3 col-md-4 col-sm-6" style="margin-top: 18px">
+    {% endif %}   
         <a href="{{person.webpage}}">
             <div class="card bg-inverse">
                 <img class="card-img" src="{{ site.base }}{{ person.image }}" alt="{{person.display_name}}">
                 <div class="card-img-overlay d-flex flex-column justify-content-end" style="padding: 0px">
                     <div style="background-color: #363636cc; color: white; padding-left: 5px">
+                        {% if person.role == "alum" %}
+                        <h3 class="card-title" style="margin-bottom: 0px; font-size: 14px">{{person.display_name}}</h3>
+                        <h5 style="font-size: 10px">{{person.bio}}</h5>
+                        {% else %}
                         <h3 class="card-title" style="margin-bottom: 0px; font-size: 18px">{{person.display_name}}</h3>
                         <h5 style="font-size: 14px">{{person.bio}}</h5>
+                        {% endif %}
                     </div>
                 </div>
             </div>

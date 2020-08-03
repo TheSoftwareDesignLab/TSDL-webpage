@@ -7,7 +7,7 @@ marioLinares:
     webpage: "https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/"
 
 alejandroMazuera:
-    display_name: "Alejandro Mazuera"
+    display_name: "Alejandro Mazuera-Rozo"
     role: grad
     image: /img/people/fotoAlejandroMazuera.jpg
     bio: "Ph.D. Student"
@@ -21,18 +21,16 @@ camiloEscobar:
     webpage: "http://caev03.github.io"
 
 anamariaMojica:
-    display_name: "Anamaria Mojica"
+    display_name: "Anamaria Mojica-Hanke"
     role: grad
     image: /img/people/fotoAna.jpg
-    bio: "MSc. Student - Information Engineering"
+    bio: "Ph.D. Student"
 
 sergioYodeb:
     display_name: "Sergio Velásquez"
     role: grad
     image: /img/people/fotoSergioVelasquez.jpg
     bio: "MSc. Student - Software Engineering"  
-
-
 
 diegoRodriguez:
     display_name: "Diego Rodríguez-Baquero"
@@ -46,11 +44,29 @@ camiloOrtiz:
     image: /img/people/avatar2.png
     bio: "MSc. Student - Information Security"
 
-mariaArevalo:
-    display_name: "Maria Arevalo"
+mariaLeon:
+    display_name: "Maria del Rosario Leon"
     role: grad
-    image: /img/people/fotoMariaArevalo.jpg
-    bio: "MSc. Student - Software Engineering"
+    image: /img/people/img_avatar2.png
+    bio: "MSc. Student - Information Engineering"
+
+jorgeGomez:
+    display_name: "Jorge Gomez"
+    role: grad
+    image: /img/people/avatar2.png
+    bio: "MSc. Student - Information Engineering"
+
+juanVega:
+    display_name: "Juan Vega"
+    role: grad
+    image: /img/people/avatar2.png
+    bio: "MSc. Student - Systems and Computing Engineering"
+
+juanEspitia:
+    display_name: "Juan Sebastian Espitia"
+    role: grad
+    image: /img/people/avatar2.png
+    bio: "MSc. Student - Systems and Computing Engineering"
 
 michaelOsorio:
     display_name: "Michael Osorio"
@@ -67,11 +83,6 @@ julianManrique:
     role: ugrad
     image: /img/people/avatar2.png
 
-juanEspitia:
-    display_name: "Juan Sebastian Espitia"
-    role: ugrad
-    image: /img/people/avatar2.png
-
 camiloPulido:
     display_name: "Juan Camilo Pulido"
     role: ugrad
@@ -81,11 +92,6 @@ cristianNovoa:
     display_name: "Cristian Novoa"
     role: ugrad
     image: /img/people/avatar2.png
-
-mariaLeon:
-    display_name: "Maria del Rosario Leon"
-    role: ugrad
-    image: /img/people/img_avatar2.png
 
 danielaRocha:
     display_name: "Daniela Rocha"
@@ -167,6 +173,12 @@ williamRavelo:
     role: collab
     image: /img/people/williamRavelo.jpg
     bio: "Industry - Picap"
+
+mariaArevalo:
+    display_name: "Maria Arevalo"
+    role: alum
+    image: /img/people/fotoMariaArevalo.jpg
+    bio: "MSc. Student - Software Engineering"
 
 dianaSolano:
     display_name: "Diana Solano"

@@ -2,3 +2,5 @@ _site
 _includes/pubs.html
 /test-deploy.sh
 .jekyll-cache/
+
+covid-angel/.DS_Store

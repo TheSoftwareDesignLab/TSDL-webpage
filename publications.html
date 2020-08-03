@@ -44,6 +44,7 @@ function refreshData () {
     var sString = $("#search").val().toLowerCase().trim()
     $("ol>li").each(function(){
         var title = $(this).find(".bibtitle").html().toLowerCase()
+        // var supp = $(this).find(".bibsupporter").html().toLowerCase()
         var author = $(this).find(".bibauthor").html().toLowerCase()
         var book = $(this).find(".bibbook").html().toLowerCase()
         var year = $(this).find(".bibyear").html().toLowerCase()
