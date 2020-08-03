@@ -6,6 +6,12 @@ marioLinares:
     bio: "Assistant Professor"
     webpage: "https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/"
 
+anamariaMojica:
+    display_name: "Anamaria Mojica-Hanke"
+    role: grad
+    image: /img/people/fotoAna.jpg
+    bio: "Ph.D. Student"
+
 alejandroMazuera:
     display_name: "Alejandro Mazuera-Rozo"
     role: grad
@@ -19,12 +25,6 @@ camiloEscobar:
     image: /img/people/fotoCamiloEscobarV.jpg
     bio: "Ph.D. Student"
     webpage: "http://caev03.github.io"
-
-anamariaMojica:
-    display_name: "Anamaria Mojica-Hanke"
-    role: grad
-    image: /img/people/fotoAna.jpg
-    bio: "Ph.D. Student"
 
 sergioYodeb:
     display_name: "Sergio Velásquez"
